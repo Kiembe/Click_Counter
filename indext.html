@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Máy Đếm Số Trực Tuyến</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <i class='bx bx-menu' title="Tính năng đang phát triển" ></i>
+            <div class="right">
+                <i class='bx bx-sun' ></i>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="container">
+                <div class="ct_menu">
+                    <i class='bx bx-menu-alt-right' ></i>
+                    <ul class="menu">
+                        <!-- <li id="set_value">Đặt giá trị</li> -->
+                        <li id="set_rate">Đặt mức tăng giảm</li>
+                        <li id="reset">Reset máy đếm</li>
+                    </ul>
+                </div>
+
+                <div class="ct_number">
+                    <h1 id="count">0</h1>
+                </div>
+
+                <div class="ct_btn">
+                    <button id="down_btn"> - </button>
+                    <button id="up_btn"> + </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rate">
+            <div class="container">
+                <i class='bx bx-x'></i>
+                <h5>Đặt mức tăng giảm</h5>
+                <input id="rate_count" type="number" value="1" min="1">
+                <input id="save_rate" type="submit" value="Lưu">
+            </div>
+        </div>
+
+        <div class="set">
+            <div class="container">
+                <i class='bx bx-x'></i>
+                <h5>Đặt giá trị</h5>
+                <input id="value_set" type="number" value="0">
+                <input id="save_value" type="submit" value="Lưu">
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/ctMenu.js"></script>
+    <script src="./assets/js/LightMode.js"></script>
+</body>
+</html>
